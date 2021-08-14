@@ -25,3 +25,32 @@ section .circle {
     background: #e51e2a;
     clip-path: circle(70% at right -20%);
 }
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    position: relative;
+    max-width: 200px;
+    filter: invert(100%) sepia(1%) saturate(100%) hue-rotate(260deg) brightness(100%) contrast(118%);    
+}
+header .navigation {
+    position: relative;
+    display: flex;
+}
+header .navigation li {
+    list-style: none;
+}
+header .navigation li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500px;
+    text-decoration: none;
+    margin-left: 40px;
+}
