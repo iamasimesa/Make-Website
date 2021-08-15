@@ -151,3 +151,49 @@ justify-content: flex-end;
 .swiper-container-3d .swiper-slide-shadow-right {
      background-image: none;
 }
+@media (max-width: 991px) {
+    header {
+        padding: 40px;
+    }
+    section {
+        position: relative;
+    }
+
+    .sci {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content .textBox,
+    .content .imgBox
+     {
+        max-width: 100%;
+    }
+    .swiper-slide {
+               height: 300px;
+        }
+    header .navigation {
+        display: none;
+    }
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../images/content/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 10000;
+    }
+    .toggle.active {
+        background: url(../images/content/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
